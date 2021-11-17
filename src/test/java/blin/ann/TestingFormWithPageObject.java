@@ -17,7 +17,7 @@ public class TestingFormWithPageObject extends TestBase {
 
 
     @Test
-    void FillFormTest() {
+    void fillFormTest() {
         registrationPage.openPage();
         registrationPage.typeFirstName(firstName)
                 .typeLastName(lastName)

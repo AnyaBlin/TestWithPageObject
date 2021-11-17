@@ -15,12 +15,12 @@ import static com.codeborne.selenide.Selenide.*;
 public class TestingForm extends TestBase {
 
     @BeforeAll
-    static void beforeAll(){
+    static void beforeAll() {
         Configuration.startMaximized = true;
     }
 
     @Test
-    void FillFormTest() {
+    void fillFormTest() {
         open("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("Ann");
         $("#lastName").setValue("Blini");

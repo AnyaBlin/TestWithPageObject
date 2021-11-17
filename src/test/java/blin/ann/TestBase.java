@@ -9,11 +9,9 @@ public class TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
     @BeforeAll
-    static void beforeAll(){
+    static void beforeAll() {
         Configuration.startMaximized = true;
     }
-
-
 
 
 }
