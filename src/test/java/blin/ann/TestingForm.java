@@ -38,7 +38,5 @@ public class TestingForm extends TestBase {
         $(By.id("react-select-3-input")).setValue("Haryana").pressEnter();
         $(By.id("react-select-4-input")).setValue("Karnal").pressEnter();
         $(byText("Submit")).click();
-
-
     }
 }

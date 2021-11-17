@@ -15,7 +15,6 @@ public class TestingFormWithPageObject extends TestBase {
     String userAddress = faker.address().streetAddress();
     String userNumber = faker.number().digits(10);
 
-
     @Test
     void fillFormTest() {
         registrationPage.openPage();
@@ -41,6 +40,5 @@ public class TestingFormWithPageObject extends TestBase {
                 .checkResults("Picture", "22.01.2021.png")
                 .checkResults("Address", userAddress)
                 .checkResults("State and City", "Haryana Karnal");
-
     }
 }
