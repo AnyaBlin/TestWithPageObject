@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import java.util.Locale;
 
 public class TestingFormWithPageObject extends TestBase {
+
+
     Faker faker = new Faker(new Locale("en-IND"));
 
     String firstName = faker.name().firstName();
