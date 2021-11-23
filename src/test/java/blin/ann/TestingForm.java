@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.selector.ByText;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
@@ -15,6 +16,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class TestingForm extends TestBase {
 
     @Test
+    @DisplayName("Заполнение формы регистрации")
     void fillFormTest() {
         open("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("Ann");

@@ -1,12 +1,12 @@
 package blin.ann;
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.Locale;
 
 public class TestingFormWithPageObject extends TestBase {
-
 
     Faker faker = new Faker(new Locale("en-IND"));
 
@@ -18,6 +18,7 @@ public class TestingFormWithPageObject extends TestBase {
     String userNumber = faker.number().digits(10);
 
     @Test
+    @DisplayName("Заполнение формы регистрации с PageObj")
     void fillFormTest() {
         registrationPage.openPage();
         registrationPage.typeFirstName(firstName)
