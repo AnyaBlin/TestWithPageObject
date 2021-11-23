@@ -14,11 +14,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TestingForm extends TestBase {
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.startMaximized = true;
-    }
-
     @Test
     void fillFormTest() {
         open("https://demoqa.com/automation-practice-form");
