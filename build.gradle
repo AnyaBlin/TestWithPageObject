@@ -31,13 +31,13 @@ dependencies {
     testRuntimeOnly(
             "org.slf4j:slf4j-simple:1.7.29",
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
-
 }
-
-tasks.withType(JavaCompile) {
+compileJava {
     options.encoding = 'UTF-8'
 }
-
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
 tasks.withType(Test) {
     useJUnitPlatform()
 

@@ -18,7 +18,7 @@ public class TestingFormWithPageObject extends TestBase {
     String userNumber = faker.number().digits(10);
 
     @Test
-    @DisplayName("Заполнение формы регистрации с PageObj")
+    @DisplayName("Р—Р°РїРѕР»РЅРµРЅРёРµ С„РѕСЂРјС‹ СЂРµРіРёСЃС‚СЂР°С†РёРё СЃ PageObj")
     void fillFormTest() {
         registrationPage.openPage();
         registrationPage.typeFirstName(firstName)

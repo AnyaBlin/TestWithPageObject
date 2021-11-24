@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class TestingForm extends TestBase {
 
     @Test
-    @DisplayName("Заполнение формы регистрации")
+    @DisplayName("Р—Р°РїРѕР»РЅРµРЅРёРµ С„РѕСЂРјС‹ СЂРµРіРёСЃС‚СЂР°С†РёРё")
     void fillFormTest() {
         open("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("Ann");
