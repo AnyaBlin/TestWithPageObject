@@ -28,7 +28,6 @@ public class RegistrationPage {
             selectCity = $("#react-select-4-input"),
             clickSubmit = $("#submit");
 
-
     public void openPage() {
         open("https://demoqa.com/automation-practice-form");
     }
