@@ -5,6 +5,8 @@ import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static java.lang.String.format;
+
 @Tag("properties")
 public class OwnerTests {
     public CredentialsConfig credentials =
@@ -14,6 +16,9 @@ public class OwnerTests {
     void credentialsTests() {
         String login = credentials.login();
         String password = credentials.password();
+        String message = format(login, password);
+        System.out.println("Логин: " + login);
+        System.out.println("Пароль: " + password);
 
     }
 }
