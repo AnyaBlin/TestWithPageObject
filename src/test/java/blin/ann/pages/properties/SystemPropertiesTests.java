@@ -4,8 +4,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("Проверка браузера")
 public class SystemPropertiesTests {
-    @DisplayName("Проверка браузера")
     @Test
     @Tag("properties")
     void someTests() {
