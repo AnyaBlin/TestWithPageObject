@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
+import static java.lang.String.format;
 
 @DisplayName("Вывод данных из credentials.properties")
 @Tag("properties")

@@ -14,16 +14,16 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import static java.lang.String.format;
 
 public class TestBase {
-    public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
+
     RegistrationPage registrationPage = new RegistrationPage();
 
     @BeforeAll
     static void setup() {
-        String url = System.getProperty("url", "selenoid.autotests.cloud/wd/hub/");
+        CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
+
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
-        Configuration.remote = format("https://%s:%s@%s", credentials.login(),
-                credentials.password(), url);
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
